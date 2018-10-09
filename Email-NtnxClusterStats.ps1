@@ -39,7 +39,7 @@ $TimeStamp = Get-Date -UFormat %Y%m%d-%H%p
 $ArrayNtxClusters | ForEach-Object {
   $ClusterStats=@{}
   Connect-NTNXCluster -Server $_ -UserName $AdminName -Password $Secure_String_Pwd -AcceptInvalidSSLCerts -ForcedConnection | Out-Null
-  $Stats=Get-NTNXCluster -Server $_).stats
+  $Stats=(Get-NTNXCluster -Server $_).stats
   $ClusterStats = New-Object PSObject -Property @{
     Time = $TimeStamp
     Cluster = $_
