@@ -2,7 +2,7 @@
 # Author: Michael Nichols
 # Use at own risk - this script is provided for illustrative purposes
 # Version .1
-# Purpose: Gets VMs listed in Nutanix alert 'Protected Vms not found', removes VMs from specific Protection Domain, and closes alert
+# Purpose: Gets VMs listed in Nutanix alert 'Protected Vms not found', removes VMs from alert specified Protection Domain, and closes alert
 # This code presents reactive remediation
 # Example Code
 $ArrayNtxClusters = "cluster1", "cluster2", "cluster3"
